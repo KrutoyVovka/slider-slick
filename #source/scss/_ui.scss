@@ -1,0 +1,62 @@
+//==========================================================================================
+.ibg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	img {
+		display: none;
+	}
+}
+//==========================================================================================
+// Слайдер
+.slick-slider {
+	position: relative;
+	& .slick-arrow {
+		&.slick-prev {
+		}
+		&.slick-next {
+		}
+		&.slick-disabled {
+		}
+	}
+	.slick-track,
+	.slick-list {
+	}
+	// Ограничивающая оболочка
+	.slick-list {
+		overflow: hidden;
+	}
+	// Лента слайдов
+	.slick-track {
+		@include flexbox(); /* ! для vertical:true использовать display:block */
+		// align-items: flex-start; /* для включения функции adaptiveHeight */
+	}
+	// Слайд
+	.slick-slide {
+	}
+	// Точки под слайдером
+	.slick-dots {
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
+		li {
+			list-style: none;
+			margin: 10px 10px 0px 0px;
+			button {
+				width: 10px;
+				height: 10px;
+				font-size: 0;
+				border-radius: 50%;
+				background-color: #fff;
+			}
+			// Активный слайд
+			&.slick-active {
+				button {
+					border: 1px solid rgba(147, 176, 199, 0.808);
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+//==========================================================================================

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: a;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: a;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  padding: 50px 50px;
+  background: #2c2b2b;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ibg img {
+  display: none;
+}
+
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+.slick-slider .slick-track {
+  display: flex;
+  font-size: 0;
+  /* ! для vertical:true использовать display:block */
+}
+.slick-slider .slick-dots {
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slider .slick-dots li {
+  list-style: none;
+  margin: 10px 10px 0px 0px;
+}
+.slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.slick-slider .slick-dots li.slick-active button {
+  border: 1px solid rgba(147, 176, 199, 0.808);
+  background-color: transparent;
+}
+
+.slider {
+  padding: 0px 50px;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -25px 0px 0px 0px;
+  z-index: 2;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../../img/arrow_next.png") 0 0/100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../../img/arrow_next.png") 0 0/100% no-repeat;
+}
